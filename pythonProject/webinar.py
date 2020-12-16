@@ -112,7 +112,7 @@ def check_registrant(new_register):
                 l_email = email
             else:
                 l_email = lead.email
-            lead_item = LeadList(l_name,l_email,l_phone)
+            lead_item = LeadList(l_name, l_email, l_phone)
 
             # update lead name
             if name:
@@ -142,3 +142,16 @@ def check_registrant(new_register):
 check_registrant(first_register)
 check_registrant(second_register)
 check_registrant(third_register)
+
+####### Show Results
+#
+## LeadList
+print("New Lead List")
+for lead in lead_list:
+    print("Lead Item : ", lead.name, " / ", lead.email, " / ", lead.phone)
+
+print("New Contacts List")
+## ContactsList
+for contact in contacts_list:
+    print("Contact Item : ", contact.name, " / ", contact.email, " / ", contact.phone)
+
